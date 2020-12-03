@@ -33,8 +33,8 @@ export const useStyles = makeStyles((theme) => ({
 	textLanguages: {
 		fontSize: "13px",
 		paddingLeft: "0.25rem",
-		paddingTop: "0.75rem",
-		paddingBottom: "0.75rem",
+		paddingTop: "0.25rem",
+		paddingBottom: "0.25rem",
 		textTransform: "capitalize",
 	},
 	ArrIcon: {
