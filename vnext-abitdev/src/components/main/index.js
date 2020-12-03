@@ -7,11 +7,11 @@ const useStyles = makeStyles(theme => ({
 	root: {
 		display:'flex',
 		
-		marginTop: '1rem',
+		marginTop: 4,
 		color: "#636e72",
 	},
 	sidebar:{
-		flexGrow: '2',
+		flexGrow: '1',
 	},
 	content:{
 		flexGrow: '8'

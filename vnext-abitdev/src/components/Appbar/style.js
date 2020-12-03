@@ -7,6 +7,7 @@ export const useStyles = makeStyles((theme) => ({
 	title: {
 		paddingLeft: "1rem",
 		paddingRight: "1rem",
+		marginLeft: '2rem'
 	},
 	Appbar: {
 		background: "white",
@@ -25,18 +26,27 @@ export const useStyles = makeStyles((theme) => ({
 	toolbar__right: {
 		display: 'flex',
 		alignItems: 'center',
-		marginLeft: '55rem'
+		marginLeft: '45rem'
 	},
 	calendar: {
 		display: "flex",
 		alignItems: "center",
-		marginLeft: "2rem",
+		marginLeft: "5rem",
 		marginTop: 2,
+		cursor: 'pointer'
 	},
 	calender__Text: {
 		fontSize: 14,
 		marginLeft: 4,
 		marginTop: 1.5,
+		width: '139px',
+
 	},
+
+	inputDate: {
+		"& > div > input": {
+			border: 'none!important'
+		}
+	}
 	
 }));
