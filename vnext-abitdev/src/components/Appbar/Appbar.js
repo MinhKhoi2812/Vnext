@@ -9,7 +9,7 @@ import TodayIcon from "@material-ui/icons/Today";
 import { useStyles } from "./style.js";
 import ButtonLanguages from "./Button/ButtonLanguages.js";
 import Account from "./Account/Account.js";
-
+import Calendar from './Calendar/Calendar.js'
 const Navbar = () => {
 	const classes = useStyles();
 	const [state, setState] = React.useState({
