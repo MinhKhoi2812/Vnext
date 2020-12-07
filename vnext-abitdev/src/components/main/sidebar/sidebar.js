@@ -10,21 +10,15 @@ import Listsidebar from "./Listsidebar.js";
 import { HomeIcon } from "./Icon.js";
 
 const Sidebar = () => {
-	const classes = useStyles();
+    const classes = useStyles();
 
-	return (
-		<div className={classes.root}>
+    return (
+        <div className={classes.root}>
 			<List component="nav" aria-labelledby="nested-list-subheader"className={classes.listsidebar} >
-				<ListItem button>
-					<ListItemIcon>
-						<HomeIcon />
-					</ListItemIcon>
-					<ListItemText secondary="Dashboard" className={classes.textPrimary} />
-				</ListItem>
 				<Listsidebar  />
 			</List>
 		</div>
-	);
+    );
 };
 
 export default Sidebar;

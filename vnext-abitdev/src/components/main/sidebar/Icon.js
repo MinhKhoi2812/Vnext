@@ -15,6 +15,11 @@ import PersonOutlineSharpIcon from '@material-ui/icons/PersonOutlineSharp';
 import GetAppSharpIcon from '@material-ui/icons/GetAppSharp';
 import AccountBoxSharpIcon from '@material-ui/icons/AccountBoxSharp';
 import DnsSharpIcon from '@material-ui/icons/DnsSharp';
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import Collapse from "@material-ui/core/Collapse";
 
 export {
 	ExpandLess,
@@ -32,5 +37,10 @@ export {
 	PersonOutlineSharpIcon,
 	GetAppSharpIcon,
 	AccountBoxSharpIcon,
-	DnsSharpIcon
+	DnsSharpIcon,
+	List,
+	ListItem,
+	ListItemIcon,
+	ListItemText,
+	Collapse
 };
