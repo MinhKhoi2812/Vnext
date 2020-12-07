@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { useStyles } from "./style.js";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import Collapse from "@material-ui/core/Collapse";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import {
 	ExpandLess,
@@ -23,6 +19,11 @@ import {
 	GetAppSharpIcon,
 	AccountBoxSharpIcon,
 	DnsSharpIcon,
+	List,
+	ListItem,
+	ListItemIcon,
+	ListItemText,
+	Collapse,
 } from "./Icon.js";
 
 const Listsidebar = () => {
@@ -45,9 +46,19 @@ const Listsidebar = () => {
 	const accountHandleClick = () => {
 		setAccount(!account);
 	};
-
 	return (
-		<div>
+		<div className={classes.root}>
+			<Link to="/">
+				<ListItem button>
+					<ListItemIcon>
+						<HomeIcon />
+					</ListItemIcon>
+					<ListItemText
+						secondary="Dashboard"
+						className={classes.textPrimary}
+					/>
+				</ListItem>
+			</Link>
 			<ListItem button button onClick={handleClick}>
 				<ListItemIcon>
 					<DevicesIcon />
@@ -60,15 +71,17 @@ const Listsidebar = () => {
 			</ListItem>
 			<Collapse in={open} timeout="auto" unmountOnExit>
 				<List component="div" disablePadding>
-					<ListItem button className={classes.nested}>
-						<ListItemIcon>
-							<DevicesIcon />
-						</ListItemIcon>
-						<ListItemText
-							primary="All Devices"
-							className={classes.textSubPrimary}
-						/>
-					</ListItem>
+					<Link to="/device">
+						<ListItem button className={classes.nested}>
+							<ListItemIcon>
+								<DevicesIcon />
+							</ListItemIcon>
+							<ListItemText
+								primary="All Devices"
+								className={classes.textSubPrimary}
+							/>
+						</ListItem>
+					</Link>
 					<ListItem button className={classes.nested}>
 						<ListItemIcon>
 							<EventIcon />
@@ -116,7 +129,10 @@ const Listsidebar = () => {
 						<ListItemIcon>
 							<EcoIcon />
 						</ListItemIcon>
-						<ListItemText primary="AI " className={classes.textSubPrimary}/>
+						<ListItemText
+							primary="AI "
+							className={classes.textSubPrimary}
+						/>
 					</ListItem>
 				</List>
 			</Collapse>
@@ -190,15 +206,17 @@ const Listsidebar = () => {
 							className={classes.textSubPrimary}
 						/>
 					</ListItem>
-					<ListItem button className={classes.nested}>
-						<ListItemIcon>
-							<AccountBoxSharpIcon />
-						</ListItemIcon>
-						<ListItemText
-							primary="Group Management"
-							className={classes.textSubPrimary}
-						/>
-					</ListItem>
+					<Link to="/Group">
+						<ListItem button className={classes.nested}>
+							<ListItemIcon>
+								<AccountBoxSharpIcon />
+							</ListItemIcon>
+							<ListItemText
+								primary="Group Management"
+								className={classes.textSubPrimary}
+							/>
+						</ListItem>
+					</Link>
 					<ListItem button className={classes.nested}>
 						<ListItemIcon>
 							<DnsSharpIcon />
@@ -210,6 +228,7 @@ const Listsidebar = () => {
 					</ListItem>
 				</List>
 			</Collapse>
+			<main></main>
 		</div>
 	);
 };
