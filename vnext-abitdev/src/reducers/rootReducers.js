@@ -1,3 +1,4 @@
-// import { combineReducers } from "redux";
+import { combineReducers } from "redux";
+import Fetchingdata from "./Fetchingdata.js";
 
-// export default combineReducers({});
+export default combineReducers({ Fetchingdata });

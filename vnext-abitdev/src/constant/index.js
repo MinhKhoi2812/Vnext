@@ -1,1 +1,2 @@
-// export const SEARCH_ITEM = 'SEARCH_ITEM'
+export const FETCHING_DATA = "FETCHING_DATA";
+export const FILTER_DEVICES = "FILTER_DEVICES"

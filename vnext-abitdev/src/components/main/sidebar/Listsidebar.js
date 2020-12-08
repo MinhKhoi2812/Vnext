@@ -48,14 +48,14 @@ const Listsidebar = () => {
 	};
 	return (
 		<div className={classes.root}>
-			<Link to="/">
+			<Link to="/" className={classes.Link}>
 				<ListItem button>
 					<ListItemIcon>
 						<HomeIcon />
 					</ListItemIcon>
 					<ListItemText
 						secondary="Dashboard"
-						className={classes.textPrimary}
+						className={classes.textPrimaryLink}
 					/>
 				</ListItem>
 			</Link>
@@ -71,14 +71,14 @@ const Listsidebar = () => {
 			</ListItem>
 			<Collapse in={open} timeout="auto" unmountOnExit>
 				<List component="div" disablePadding>
-					<Link to="/device">
+					<Link to="/device" className={classes.Link}>
 						<ListItem button className={classes.nested}>
 							<ListItemIcon>
 								<DevicesIcon />
 							</ListItemIcon>
 							<ListItemText
 								primary="All Devices"
-								className={classes.textSubPrimary}
+								className={classes.textSubPrimaryLink}
 							/>
 						</ListItem>
 					</Link>
@@ -206,14 +206,14 @@ const Listsidebar = () => {
 							className={classes.textSubPrimary}
 						/>
 					</ListItem>
-					<Link to="/Group">
+					<Link to="/Group" className={classes.Link}>
 						<ListItem button className={classes.nested}>
 							<ListItemIcon>
 								<AccountBoxSharpIcon />
 							</ListItemIcon>
 							<ListItemText
 								primary="Group Management"
-								className={classes.textSubPrimary}
+								className={classes.textSubPrimaryLink}
 							/>
 						</ListItem>
 					</Link>

@@ -1,7 +1,7 @@
-// import { createStore } from "redux";
-// import rootReducer from "../reducers/rootReducers.js";
+import { createStore,applyMiddleware } from "redux";
+import rootReducer from "../reducers/rootReducers.js";
 
-// const store = createStore(rootReducer);
+const store = createStore(rootReducer);
 
 
-// export default store
+export default store
