@@ -22,7 +22,7 @@ import {
   ChevronRightIcon,
 } from "./icon.js";
 
-const drawerWidth = 240;
+const drawerWidth = 250;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,7 +43,8 @@ const useStyles = makeStyles((theme) => ({
     }),
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(4),
+    marginLeft: '-0.5rem', 
   },
   hide: {
     display: "none",

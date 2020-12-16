@@ -31,7 +31,7 @@ export const useStyles = makeStyles((theme) => ({
 		borderRadius: "5px",
 		width: "15rem",
 		height: "1.5rem",
-		marginLeft: "-7rem",
+		marginLeft: "-7.5rem",
 	},
 	Cell: {
 		border: "1px solid rgba(0, 0, 0, 0.23)",

@@ -7,7 +7,7 @@ export const useStyles = makeStyles((theme) => ({
     minWidth: 120,
   },
   btnDevices: {
-    marginRight: "-8rem",
+    marginRight: "-7.5rem",
     marginBottom: 5,
     "&>span": {
       fontSize: "14px",

@@ -46,6 +46,54 @@ export const useStyles1 = makeStyles((theme) => ({
 		color: "black",
 	},
 	tableCellHead: {
-		fontWeight: 'bold'
-	}
+		fontWeight: "bold",
+	},
+	action: {
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "space-between",
+	},
+	iconAction: {
+		paddingLeft: "1rem",
+		paddingRight: "1rem",
+		color: "#636e72",
+		cursor: 'pointer'
+	},
+	deleteiconAction: {
+		paddingRight: "1rem",
+		color: "#ccc",
+		cursor: 'pointer'
+	},
+	footerTable: {
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "flex-end",
+	},
+	rowPages: {
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "center",
+		marginTop: "1rem",
+		marginRight: "3rem",
+		fontSize: '15px',
+		cursor: 'pointer'
+	},
+	numberPages: {
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "center",
+		marginTop: "1rem",
+		marginRight: "4rem",
+	},
+	arrowIcon: {
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "center",
+		marginTop: "1rem",
+		cursor: 'pointer',
+		color: '#ccc',
+		'& > svg' : {
+			paddingRight: '1rem'
+		}
+	},
 }));

@@ -6,6 +6,8 @@ export const useStyles = makeStyles((theme) => ({
 		alignItems: "center",
 		marginTop: "5rem",
 		marginLeft: "6rem",
+		justifyContent: 'space-between',
+		width: '100%'
 	},
 	horizontalBar: {
 		width: "563px",
@@ -13,7 +15,7 @@ export const useStyles = makeStyles((theme) => ({
 		marginBottom: "5rem",
 	},
 	PieChart: {
-		marginLeft: "14rem",
+		marginLeft: "16rem",
 		marginBottom: "5rem",
 		width: "270px",
 		margin: "auto"

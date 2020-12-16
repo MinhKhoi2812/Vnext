@@ -1,0 +1,72 @@
+{
+	"appbar": {
+		"dash": "Dashboard"
+	},
+	"devices": {
+		"all": "All Devices",
+		"event": "Events",
+		"devices": "Devices"
+	},
+	"services": {
+		"services": "Services",
+		"external": "External API",
+		"payment": "Payment",
+		"ai": "AI"
+	},
+	"data": {
+		"data": "Data",
+		"iot": "Iot Core",
+		"dynamo_DB": "DynamoDB",
+		"RDS": "RDS"
+	},
+	"setting": {
+		"all": "Admin Settings",
+		"set_public_infomation": "Set PubLic Infomation",
+		"data_download": "Data Download",
+		"group_management": "Group Management",
+		"device_list": "Device List"
+	},
+	"account_settings": "Account Settings",
+	"number_of_devices": "Number Of Devices",
+	"activating_of_devices": "Activating Of Devices",
+	"device_1": "Device 1",
+	"device_2": "Device 2",
+	"device_3": "Device 3",
+	"Table": {
+		"devices": "Devices",
+		"search": "Search...",
+		"add_device": "ADD DEVICE",
+		"name": "Name",
+		"device_id": "Device ID",
+		"type": "Type",
+		"last_activity": "Last Activity",
+		"create_at": "Create At",
+		"location": "Location",
+		"group": "Group",
+		"actions": "Actions"
+	},
+	"Group": {
+		"list_group": "List Group",
+		"group_1": "Group 1",
+		"group_2": "Group 2",
+		"group_3": "Group 3",
+		"group_4": "Group 4",
+		"group_5": "Group 5",
+		"group_6": "Group 6",
+		"group_7": "Group 7",
+		"group_8": "Group 8",
+		"group_9": "Group 9",
+		"group_10": "Group 10",
+		"admins": "Admins",
+		"users": "Users",
+		"devices": "Devices",
+		"search": "Search...",
+		"admin_permission": "ADMIN PERMISSTION",
+		"add_admin": "ADD ADMIN",
+		"name": "Name",
+		"email": "Email",
+		"phone_number": "Phone Number",
+		"address": "Address",
+		"action": "Action"
+	}
+}

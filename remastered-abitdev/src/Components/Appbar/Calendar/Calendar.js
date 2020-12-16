@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import DateFnsUtils from "@date-io/date-fns";
 import { makeStyles } from "@material-ui/core/styles";
 import { DatePicker } from "@material-ui/pickers";
+import style from "./style.css";
 
 import {
 	MuiPickersUtilsProvider,
@@ -13,10 +14,16 @@ import {
 
 const useStyles = makeStyles((theme) => ({
 	inputDate: {
+		"&global": {
+			".MuiInput-underline:before": {
+				content: "",
+			},
+		},
 		border: "none!important",
 		display: "flex",
 		flexDirection: "row-reverse",
-		outline: 'none!important'
+		outline: "none!important",
+		paddingLeft: 1,
 	},
 }));
 
@@ -32,12 +39,14 @@ export default function MaterialUIPickers() {
 	return (
 		<MuiPickersUtilsProvider utils={DateFnsUtils}>
 			<KeyboardDatePicker
-				clearable
+				//clearable
+				autoOk
+				//variant="inline"
+				inputVariant="standard"
 				value={selectedDate}
 				onChange={(date) => handleDateChange(date)}
 				minDate={new Date()}
 				InputAdornmentProps={{ position: "start" }}
-				inputVariant="outlined"
 				className={classes.inputDate}
 			/>
 		</MuiPickersUtilsProvider>

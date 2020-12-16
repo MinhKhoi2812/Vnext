@@ -11,9 +11,13 @@ import FirstPageIcon from "@material-ui/icons/FirstPage";
 import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft";
 import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
 import LastPageIcon from "@material-ui/icons/LastPage";
-import TableHead from '@material-ui/core/TableHead';
+import TableHead from "@material-ui/core/TableHead";
+import CreateIcon from "@material-ui/icons/Create";
+import DeleteIcon from "@material-ui/icons/Delete";
+import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 
-	
 export {
 	Table,
 	TableBody,
@@ -28,5 +32,11 @@ export {
 	KeyboardArrowLeft,
 	LastPageIcon,
 	KeyboardArrowRight,
-	TableHead
+	TableHead,
+	CreateIcon,
+	DeleteIcon,
+	ArrowDropDownIcon,
+	ChevronLeftIcon,
+	ChevronRightIcon,
+	
 };

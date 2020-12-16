@@ -220,7 +220,7 @@ const TableMain = () => {
 										className={classes.Cell}
 										align="center"
 									>
-										{item.device_type}
+										{item.device_id}
 									</TableCell>
 									<TableCell
 										className={classes.Cell}

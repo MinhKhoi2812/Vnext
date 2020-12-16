@@ -1,14 +1,15 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 
-export const useStyles = makeStyles(theme => ({
+export const useStyles = makeStyles((theme) => ({
 	root: {
 		marginTop: "0.72rem",
-	
+		marginRight:'10rem'
 	},
-	searchComponent:{
-		marginRight: 15
+	searchComponent: {
+		marginRight: 10,
 	},
-	groupComponnent:{
-		height: '620px',
-	}
-}))
+	groupComponnent: {
+		height: '100%',
+		width: '100%'
+	},
+}));

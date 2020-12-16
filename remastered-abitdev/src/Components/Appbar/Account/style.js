@@ -4,7 +4,7 @@ export const useStyles = makeStyles((theme) => ({
 	root: {
 		display: "flex",
 		alignItems: "center",
-		marginRight: "2rem",
+		marginRight: "0rem",
 		marginLeft: "2rem",
 	},
 	textAccount: {
